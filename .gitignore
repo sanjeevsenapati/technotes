@@ -17,3 +17,6 @@ Thumbs.db
 *.log
 tmp/
 temp/
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/

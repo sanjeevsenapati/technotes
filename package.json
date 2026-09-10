@@ -1,0 +1,27 @@
+{
+  "name": "lishes",
+  "version": "1.0.0",
+  "description": "Welcome to **Lishes**, a comprehensive collection of simple and complex shell scripts designed to streamline system administration tasks and make life easier for Linux administrators and DevOps engineers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevsenapati/lishes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sanjeevsenapati/lishes/issues"
+  },
+  "homepage": "https://github.com/sanjeevsenapati/lishes#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
