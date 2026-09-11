@@ -1,37 +1,83 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-// https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: "Lishes",
-  description: "Linux Shell Scripts Documentation",
+export default withMermaid(defineConfig({
+  title: "TechNotes",
+  description: "Practical Engineering Documentation",
   cleanUrls: true,
+  vite: {
+    optimizeDeps: {
+      include: ['mermaid', 'fastdom']
+    }
+  },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+    outline: {
+      level: [2, 3],
+      label: 'On This Page'
+    },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/guide/monitoring' }
+      { text: 'Linux', link: '/linux/fundamentals' },
+      { text: 'Shell', link: '/shell/bash-basics' },
+      { text: 'Containers', link: '/containers/1-fundamentals' },
+      { text: 'Kubernetes', link: '/kubernetes/1-architecture' }
     ],
-
     sidebar: [
       {
-        text: 'Script Categories',
+        text: 'LINUX',
+        collapsed: false,
         items: [
-          { text: 'Monitoring', link: '/guide/monitoring' },
-          { text: 'Automation', link: '/guide/automation' },
-          { text: 'Backups', link: '/guide/backups' },
-          { text: 'Networks', link: '/guide/networks' },
-          { text: 'Utilities', link: '/guide/utilities' }
+          { text: 'Linux Fundamentals', link: '/linux/fundamentals' },
+          { text: 'Files & Directories', link: '/linux/files-and-directories' },
+          { text: 'Troubleshooting', link: '/linux/troubleshooting' }
+        ]
+      },
+      {
+        text: 'SHELL',
+        collapsed: false,
+        items: [
+          { text: 'Bash Basics', link: '/shell/bash-basics' },
+          { text: 'Variables', link: '/shell/variables' },
+          { text: 'Shell Scripting', link: '/shell/shell-scripting' }
+        ]
+      },
+      {
+        text: 'CONTAINERS',
+        collapsed: false,
+        items: [
+          { text: '1. Fundamentals', link: '/containers/1-fundamentals' },
+          { text: '2. Docker', link: '/containers/2-docker' },
+          { text: '3. Podman', link: '/containers/3-podman' }
+        ]
+      },
+      {
+        text: 'KUBERNETES',
+        collapsed: false,
+        items: [
+          { text: '1. Architecture', link: '/kubernetes/1-architecture' },
+          { text: '2. Pods', link: '/kubernetes/2-pods' },
+          { text: '3. ReplicaSets', link: '/kubernetes/3-replicasets' },
+          { text: '4. Deployments', link: '/kubernetes/4-deployments' },
+          { text: '5. Services', link: '/kubernetes/5-services' },
+          { text: '6. ConfigMaps & Secrets', link: '/kubernetes/6-configmaps-and-secrets' },
+          { text: '7. Volumes & Storage', link: '/kubernetes/7-volumes-and-storage' },
+          { text: '8. Ingress', link: '/kubernetes/8-ingress' },
+          { text: '9. RBAC', link: '/kubernetes/9-rbac' },
+          { text: '10. Advanced Scheduling', link: '/kubernetes/10-advanced-scheduling' },
+          { text: '11. StatefulSets', link: '/kubernetes/11-statefulsets' },
+          { text: '12. DaemonSets', link: '/kubernetes/12-daemonsets' }
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sanjeevsenapati/lishes' }
     ],
-    
     footer: {
-      message: 'Released under the MIT License.',
+      message: 'Practical Engineering Documentation',
       copyright: 'Copyright © Sanjeev Senapati'
     }
   }
-})
+}))

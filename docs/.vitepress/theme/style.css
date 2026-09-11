@@ -1,50 +1,86 @@
+/**
+ * Custom Theme for TechNotes
+ * Professional Engineering Documentation Theme
+ */
+
 :root {
-  /* Paper-like background colors */
-  --vp-c-bg: #fdfbf7;
-  --vp-c-bg-alt: #f4f1e9;
-  --vp-c-bg-elv: #ffffff;
+  /* Comfortable off-white for light mode */
+  --vp-c-bg: #f9f9fa;
+  --vp-c-bg-alt: #f1f2f4;
+  --vp-c-text-1: #24292f;
+  --vp-c-text-2: #57606a;
   
-  /* Softer text colors for less eye strain */
-  --vp-c-text-1: #2c2c2c;
-  --vp-c-text-2: #555555;
-  --vp-c-text-3: #777777;
+  /* Brand colors */
+  --vp-c-brand-1: #0969da;
+  --vp-c-brand-2: #0550ae;
+  --vp-c-brand-3: #033d8b;
   
-  /* Muted sepia/brown brand color to match the book aesthetic */
-  --vp-c-brand-1: #8b5a2b;
-  --vp-c-brand-2: #a6703d;
-  --vp-c-brand-3: #c28751;
-  
-  /* Font selection */
-  --vp-font-family-base: "Georgia", "Cambria", "Times New Roman", serif;
-  --vp-font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /* Monospace font */
+  --vp-font-family-mono: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-/* Dark mode overrides - softer dark mode */
 .dark {
-  --vp-c-bg: #1c1b1a;
-  --vp-c-bg-alt: #161514;
-  --vp-c-text-1: #dcd7c9;
-  --vp-c-text-2: #a29e93;
-  --vp-c-brand-1: #d2a173;
-  --vp-c-brand-2: #e3b68b;
+  /* Professional dark developer theme */
+  --vp-c-bg: #0d1117;
+  --vp-c-bg-alt: #161b22;
+  --vp-c-text-1: #c9d1d9;
+  --vp-c-text-2: #8b949e;
+  
+  /* Brand colors for dark mode */
+  --vp-c-brand-1: #58a6ff;
+  --vp-c-brand-2: #79c0ff;
+  --vp-c-brand-3: #a5d6ff;
 }
 
-/* Keep UI elements (Sidebar, Navbar) sans-serif for clean navigation */
-.VPNavBar, .VPSidebar, .VPDocOutlineItem, .VPLink {
-  font-family: var(--vp-font-family-sans);
-}
-
-/* Relaxed reading experience */
-.VPDoc {
-  font-size: 1.15rem;
-  line-height: 1.8;
-}
-
-.VPDoc h1, .VPDoc h2, .VPDoc h3, .VPDoc h4 {
-  font-family: var(--vp-font-family-base);
+/* Typography Improvements */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  font-weight: 600;
   color: var(--vp-c-text-1);
 }
 
-.VPHero .title, .VPHero .text, .VPHero .tagline {
-  font-family: var(--vp-font-family-base);
+.vp-doc p {
+  line-height: 1.7;
+  margin-bottom: 1.2em;
+}
+
+/* Code block styling differentiation */
+.vp-doc [class*="language-"] {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.dark .vp-doc [class*="language-"] {
+  background-color: #0d1117;
+  border-color: #30363d;
+}
+
+/* Command prompt styling inside code blocks (optional simulation) */
+.vp-doc code {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9em;
+}
+
+/* Subtler shadows */
+.VPNavBar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.dark .VPNavBar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #30363d;
+}
+
+/* Custom Callouts (Tips, Warnings, etc) */
+.vp-doc .custom-block.info {
+  border-color: #0969da;
+  background-color: rgba(9, 105, 218, 0.05);
+}
+.dark .vp-doc .custom-block.info {
+  border-color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+/* Sidebar customization */
+.VPSidebar {
+  background-color: var(--vp-c-bg);
 }
