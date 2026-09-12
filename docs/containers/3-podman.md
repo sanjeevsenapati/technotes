@@ -9,17 +9,9 @@ While Docker is excellent, Podman was created by Red Hat to address two specific
 1. **Daemonless**: Podman does not require a background daemon. It interacts directly with the image registry and container runtime. If the Podman command stops, the container keeps running independently under the user's process tree.
 2. **Rootless by Default**: Podman allows standard, non-root users to run containers. This vastly improves the security posture of the host system.
 
-```mermaid
-flowchart LR
-    subgraph Docker
-        CLI[Docker CLI] -->|Talks to| D[Docker Daemon (Root)]
-        D --> C[Container]
-    end
-
-    subgraph Podman
-        P[Podman CLI (User)] --> C2[Container (User space)]
-    end
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## Drop-in Replacement
 

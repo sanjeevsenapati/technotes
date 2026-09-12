@@ -16,23 +16,9 @@ DaemonSets are perfect for cluster-wide infrastructure agents:
 
 Unlike a Deployment which schedules Pods anywhere there is capacity, a DaemonSet instructs the scheduler to strictly place one Pod per Node.
 
-```mermaid
-flowchart TD
-    subgraph Node 1
-        P1[App Pod]
-        DS1[DaemonSet Pod]
-    end
-
-    subgraph Node 2
-        P2[App Pod]
-        P3[App Pod]
-        DS2[DaemonSet Pod]
-    end
-    
-    subgraph Node 3
-        DS3[DaemonSet Pod]
-    end
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## Example YAML
 

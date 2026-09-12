@@ -9,12 +9,9 @@ To manage storage efficiently at scale, Kubernetes uses a subsystem to decouple 
 1. **PersistentVolume (PV)**: A piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes.
 2. **PersistentVolumeClaim (PVC)**: A request for storage by a user/Pod.
 
-```mermaid
-flowchart LR
-    Pod -->|Uses| PVC[PersistentVolumeClaim]
-    PVC -->|Binds to| PV[PersistentVolume]
-    PV -->|Backed by| Storage[(Cloud Block Storage / NFS)]
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## Creating a PVC
 

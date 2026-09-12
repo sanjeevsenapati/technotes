@@ -6,13 +6,9 @@ While Pods are the basic unit of execution, they are ephemeral. If a node fails,
 
 A Deployment manages a **ReplicaSet**, which in turn manages the Pods. 
 
-```mermaid
-flowchart TD
-    D[Deployment] -->|Manages| RS[ReplicaSet]
-    RS -->|Creates/Manages| P1((Pod 1))
-    RS -->|Creates/Manages| P2((Pod 2))
-    RS -->|Creates/Manages| P3((Pod 3))
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 If you tell a Deployment you want 3 replicas of your application, the ReplicaSet ensures exactly 3 Pods are running at all times. If a Pod crashes, the ReplicaSet automatically starts a new one.
 

@@ -12,14 +12,9 @@ If a Pod crashes or is deleted, the ReplicaSet controller notices that the curre
 
 ReplicaSets link to Pods via **Label Selectors**.
 
-```mermaid
-flowchart TD
-    RS[ReplicaSet\nDesired: 3\nSelector: app=frontend]
-    
-    RS -.-> P1((Pod 1\napp=frontend))
-    RS -.-> P2((Pod 2\napp=frontend))
-    RS -.-> P3((Pod 3\napp=frontend))
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 If you manually create a Pod with the label `app=frontend` while the ReplicaSet already has 3 running, the ReplicaSet will instantly terminate your manually created Pod because it exceeds the desired count of 3.
 

@@ -1,16 +1,10 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default withMermaid(defineConfig({
+export default defineConfig({
   base: '/technotes/',
   title: "TechNotes",
   description: "Practical Engineering Documentation",
   cleanUrls: true,
-  vite: {
-    optimizeDeps: {
-      include: ['mermaid', 'fastdom']
-    }
-  },
   themeConfig: {
     search: {
       provider: 'local'
@@ -81,4 +75,4 @@ export default withMermaid(defineConfig({
       copyright: 'Copyright © Sanjeev Senapati'
     }
   }
-}))
+});

@@ -84,11 +84,3 @@
 .VPSidebar {
   background-color: var(--vp-c-bg);
 }
-
-/* Hide mermaid version text injected by Mermaid 11 */
-svg[id^="mermaid-"] [id$="-version"],
-[id$="-version"],
-.mermaid-version,
-.mermaid-version-text {
-  display: none !important;
-}

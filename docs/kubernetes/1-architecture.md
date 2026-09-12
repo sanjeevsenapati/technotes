@@ -8,46 +8,9 @@ A Kubernetes cluster consists of two main parts:
 
 ## Architecture Diagram
 
-```mermaid
-flowchart TB
-    subgraph Control Plane
-        API[kube-apiserver]
-        ETCD[(etcd)]
-        CM[kube-controller-manager]
-        SCHED[kube-scheduler]
-        
-        API <--> ETCD
-        API <--> CM
-        API <--> SCHED
-    end
-
-    subgraph Worker Node 1
-        KLT1[kubelet]
-        KPR1[kube-proxy]
-        CRI1[Container Runtime]
-        POD1((Pod))
-        POD2((Pod))
-        
-        KLT1 <--> CRI1
-        CRI1 --- POD1
-        CRI1 --- POD2
-    end
-    
-    subgraph Worker Node 2
-        KLT2[kubelet]
-        KPR2[kube-proxy]
-        CRI2[Container Runtime]
-        POD3((Pod))
-        
-        KLT2 <--> CRI2
-        CRI2 --- POD3
-    end
-
-    API <--> KLT1
-    API <--> KLT2
-    API <--> KPR1
-    API <--> KPR2
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## The Control Plane
 

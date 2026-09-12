@@ -8,18 +8,9 @@ An **Ingress** is an API object that manages external access to the services in 
 
 You deploy an **Ingress Controller** (like NGINX Ingress Controller, Traefik, or AWS ALB Ingress Controller), which listens for `Ingress` objects and routes traffic accordingly.
 
-```mermaid
-flowchart TD
-    Internet((Internet)) -->|HTTPS| IC[Ingress Controller]
-    
-    subgraph Cluster
-        IC -->|Rules match /api| SVC1[Service A]
-        IC -->|Rules match /web| SVC2[Service B]
-        
-        SVC1 --> P1((Pod A))
-        SVC2 --> P2((Pod B))
-    end
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## Creating an Ingress
 

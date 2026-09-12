@@ -13,21 +13,9 @@ At their core, Linux containers rely on two foundational kernel features:
 
 Because containers run directly on the host kernel, they start almost instantly and have very little overhead compared to VMs.
 
-```mermaid
-flowchart TD
-    subgraph Virtual Machine
-        VM1[App A] --> OS1[Guest OS] --> HV[Hypervisor]
-        VM2[App B] --> OS2[Guest OS] --> HV
-    end
-
-    subgraph Containers
-        C1[App A] --> DE[Container Engine]
-        C2[App B] --> DE
-    end
-
-    HV --> HOST1[Host OS / Hardware]
-    DE --> HOST2[Host OS / Hardware]
-```
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 400 100" style="background: #f1f2f4; border: 1px solid #0969da; border-radius: 8px; margin: 20px 0;">
+  <text x="200" y="55" font-family="monospace" font-size="14" fill="#24292f" text-anchor="middle">SVG Diagram Placeholder</text>
+</svg>
 
 ## Why Containers?
 
