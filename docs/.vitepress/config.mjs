@@ -42,8 +42,11 @@ export default defineConfig({
           { text: '1. Bash Basics', link: '/shell/bash-basics' },
           { text: '2. Variables', link: '/shell/variables' },
           { text: '3. Control Flow', link: '/shell/control-flow' },
-          { text: '4. Text Processing', link: '/shell/text-processing' },
-          { text: '5. Shell Scripting', link: '/shell/shell-scripting' }
+          { text: '4. Stream Utilities', link: '/shell/stream-utilities' },
+          { text: '5. Grep & Regex', link: '/shell/grep-and-regex' },
+          { text: '6. Sed', link: '/shell/sed' },
+          { text: '7. Awk', link: '/shell/awk' },
+          { text: '8. Shell Scripting', link: '/shell/shell-scripting' }
         ]
       },
       {
