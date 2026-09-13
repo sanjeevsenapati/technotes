@@ -80,10 +80,10 @@ Stay up to date with the newest deep dives added to the documentation:
 
 | Topic | Category | Description |
 |-------|----------|-------------|
+| **[Python One-Liners](/python/1-one-liners)** | Python | Shell replacements using `python -c` for JSON parsing, base64, and math. |
 | **[Advanced Git](/git/4-advanced-workflows)** | Git | Rewriting history safely using rebasing, cherry-picking, and `reflog`. |
 | **[OpenShift SCCs](/openshift/3-security-context-constraints)** | OpenShift | Why pods crash with "Permission Denied" and how to fix them using `anyuid`. |
 | **[OpenShift Routes](/openshift/4-routes-and-networking)** | OpenShift | Exposing services and configuring edge vs passthrough TLS termination. |
-| **[Storage & LVM](/linux/storage-and-lvm)** | Linux | Managing ext4/xfs filesystems and resizing Logical Volumes on the fly. |
 
 ---
 
