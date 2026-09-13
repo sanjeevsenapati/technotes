@@ -74,8 +74,32 @@ If your web server won't start, another process might be using port 80.
 sudo ss -tulpn
 ```
 
-### DNS Lookups (`dig`)
-If a hostname won't resolve, use `dig` to debug the DNS response.
+### DNS Lookups (`dig` and `nslookup`)
+If a hostname won't resolve, use `dig` or `nslookup` to debug the DNS response.
 ```bash
+# Query a domain's A record using the default resolver
 dig google.com
+
+# Simple, interactive query using nslookup
+nslookup google.com
+```
+
+### Tracing Routes (`traceroute` and `tracepath`)
+To see the exact path packets take across the internet (and where they might be dropping):
+```bash
+# Classic traceroute (requires root for some ICMP packets)
+traceroute google.com
+
+# Tracepath (similar to traceroute but doesn't require root privileges)
+tracepath google.com
+```
+
+### Advanced Diagnostics (`nc` / netcat)
+Netcat is the "Swiss Army knife" of networking. It can be used for port scanning, transferring files, or testing raw TCP/UDP connections.
+```bash
+# Test if a specific port is open (e.g., check if a database is reachable on 3306)
+nc -vz 192.168.1.50 3306
+
+# Start a simple temporary listening server on port 8080
+nc -l -p 8080
 ```

@@ -65,3 +65,35 @@ sudo firewall-cmd --permanent --add-service=http
 # Reload the firewall to apply the changes
 sudo firewall-cmd --reload
 ```
+
+## IP Addressing and Subnets
+
+Networks are divided into subnets to improve security and performance. An IP address combined with a Subnet Mask determines which part of the address is the network and which part is the specific host.
+
+### Subnetting (CIDR Notation)
+CIDR (Classless Inter-Domain Routing) notation is the modern standard for writing subnets. E.g., `192.168.1.0/24`.
+- The `/24` means the first 24 bits represent the network. 
+- A `/24` subnet provides 256 total IP addresses (254 usable for hosts).
+
+### Supernetting
+Supernetting (Route Aggregation) is the exact opposite of subnetting. It combines multiple smaller contiguous subnets into a single larger route. 
+For example, instead of routing `192.168.0.0/24` and `192.168.1.0/24` separately, a router can supernet them into a single `192.168.0.0/23` route.
+
+### `ipcalc`
+Calculating subnets in your head can be difficult. The `ipcalc` utility does the math for you.
+
+```bash
+# Calculate broadcast, network, and host ranges for an IP/CIDR
+ipcalc 192.168.1.50/26
+
+# Output snippet:
+# Address:   192.168.1.50         11000000.10101000.00000001.0011 0010
+# Netmask:   255.255.255.192 = 26 11111111.11111111.11111111.1100 0000
+# Wildcard:  0.0.0.63             00000000.00000000.00000000.0011 1111
+# =>
+# Network:   192.168.1.0/26       11000000.10101000.00000001.0000 0000
+# HostMin:   192.168.1.1          11000000.10101000.00000001.0000 0001
+# HostMax:   192.168.1.62         11000000.10101000.00000001.0011 1110
+# Broadcast: 192.168.1.63         11000000.10101000.00000001.0011 1111
+# Hosts/Net: 62                    Class C, Private Internet
+```
