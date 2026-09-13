@@ -94,9 +94,11 @@ export default defineConfig({
           { text: '2. Docker Basics', link: '/containers/2-docker-basics' },
           { text: '3. Building Images', link: '/containers/3-building-images' },
           { text: '4. Docker Compose', link: '/containers/4-docker-compose' },
-          { text: '5. Advanced Docker', link: '/containers/5-advanced-docker' },
-          { text: '6. Podman Transition', link: '/containers/6-podman-transition' },
-          { text: '7. Advanced Podman', link: '/containers/7-podman-advanced' }
+          { text: '5. Networking', link: '/containers/5-networking' },
+          { text: '6. Storage', link: '/containers/6-storage' },
+          { text: '7. Security & Advanced', link: '/containers/7-security-and-advanced' },
+          { text: '8. Podman Transition', link: '/containers/8-podman-transition' },
+          { text: '9. Advanced Podman', link: '/containers/9-podman-advanced' }
         ]
       },
       {
