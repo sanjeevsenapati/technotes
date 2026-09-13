@@ -20,6 +20,7 @@ export default defineConfig({
         items: [
           { text: 'Linux', link: '/linux/fundamentals' },
           { text: 'Shell', link: '/shell/bash-basics' },
+          { text: 'Git', link: '/git/1-fundamentals' },
           { text: 'Containers', link: '/containers/1-fundamentals' },
           { text: 'Kubernetes', link: '/kubernetes/1-architecture' },
           { text: 'OpenShift', link: '/openshift/1-architecture-and-differences' }
@@ -53,6 +54,16 @@ export default defineConfig({
           { text: '6. Sed', link: '/shell/sed' },
           { text: '7. Awk', link: '/shell/awk' },
           { text: '8. Shell Scripting', link: '/shell/shell-scripting' }
+        ]
+      },
+      {
+        text: 'GIT',
+        collapsed: false,
+        items: [
+          { text: '1. Fundamentals', link: '/git/1-fundamentals' },
+          { text: '2. Branching & Merging', link: '/git/2-branching-and-merging' },
+          { text: '3. Remotes & Collaboration', link: '/git/3-remotes-and-collaboration' },
+          { text: '4. Advanced Workflows', link: '/git/4-advanced-workflows' }
         ]
       },
       {

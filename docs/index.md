@@ -20,6 +20,9 @@ features:
   - title: 🐚 Advanced Shell
     details: Masterclass guides on grep, sed, awk, regex, and building robust automation scripts.
     link: /shell/bash-basics
+  - title: 🐙 Git Version Control
+    details: The three trees, branching, rebasing, cherry-picking, and reflog recovery.
+    link: /git/1-fundamentals
   - title: ☸️ Kubernetes
     details: Architectural diagrams, ReplicaSets, Ingress networking, and advanced RBAC troubleshooting.
     link: /kubernetes/1-architecture
@@ -77,10 +80,10 @@ Stay up to date with the newest deep dives added to the documentation:
 
 | Topic | Category | Description |
 |-------|----------|-------------|
+| **[Advanced Git](/git/4-advanced-workflows)** | Git | Rewriting history safely using rebasing, cherry-picking, and `reflog`. |
 | **[OpenShift SCCs](/openshift/3-security-context-constraints)** | OpenShift | Why pods crash with "Permission Denied" and how to fix them using `anyuid`. |
 | **[OpenShift Routes](/openshift/4-routes-and-networking)** | OpenShift | Exposing services and configuring edge vs passthrough TLS termination. |
 | **[Storage & LVM](/linux/storage-and-lvm)** | Linux | Managing ext4/xfs filesystems and resizing Logical Volumes on the fly. |
-| **[Awk Masterclass](/shell/awk)** | Shell | Leveraging the awk programming language for complex data aggregation. |
 
 ---
 
