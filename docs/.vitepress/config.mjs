@@ -22,6 +22,7 @@ export default defineConfig({
           { text: 'Shell', link: '/shell/bash-basics' },
           { text: 'Python', link: '/python/1-one-liners' },
           { text: 'Git', link: '/git/1-fundamentals' },
+          { text: 'Nginx', link: '/nginx/1-fundamentals' },
           { text: 'Containers', link: '/containers/1-fundamentals' },
           { text: 'Kubernetes', link: '/kubernetes/1-architecture' },
           { text: 'OpenShift', link: '/openshift/1-architecture-and-differences' }
@@ -65,6 +66,17 @@ export default defineConfig({
           { text: '2. Branching & Merging', link: '/git/2-branching-and-merging' },
           { text: '3. Remotes & Collaboration', link: '/git/3-remotes-and-collaboration' },
           { text: '4. Advanced Workflows', link: '/git/4-advanced-workflows' }
+        ]
+      },
+      {
+        text: 'NGINX',
+        collapsed: false,
+        items: [
+          { text: '1. Fundamentals', link: '/nginx/1-fundamentals' },
+          { text: '2. Reverse Proxy & Load Balancing', link: '/nginx/2-reverse-proxy-and-load-balancing' },
+          { text: '3. Security & SSL', link: '/nginx/3-security-and-ssl' },
+          { text: '4. Performance & Caching', link: '/nginx/4-performance-and-caching' },
+          { text: '5. Production Deployment', link: '/nginx/5-production-deployment' }
         ]
       },
       {
