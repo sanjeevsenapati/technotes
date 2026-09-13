@@ -25,9 +25,12 @@ export default defineConfig({
         text: 'LINUX',
         collapsed: false,
         items: [
-          { text: 'Linux Fundamentals', link: '/linux/fundamentals' },
-          { text: 'Files & Directories', link: '/linux/files-and-directories' },
-          { text: 'Troubleshooting', link: '/linux/troubleshooting' }
+          { text: '1. Fundamentals', link: '/linux/fundamentals' },
+          { text: '2. Files & Directories', link: '/linux/files-and-directories' },
+          { text: '3. User Management', link: '/linux/user-management' },
+          { text: '4. Package Management', link: '/linux/package-management' },
+          { text: '5. Networking', link: '/linux/networking' },
+          { text: '6. Troubleshooting', link: '/linux/troubleshooting' }
         ]
       },
       {
