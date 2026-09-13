@@ -34,9 +34,11 @@ export default defineConfig({
         text: 'SHELL',
         collapsed: false,
         items: [
-          { text: 'Bash Basics', link: '/shell/bash-basics' },
-          { text: 'Variables', link: '/shell/variables' },
-          { text: 'Shell Scripting', link: '/shell/shell-scripting' }
+          { text: '1. Bash Basics', link: '/shell/bash-basics' },
+          { text: '2. Variables', link: '/shell/variables' },
+          { text: '3. Control Flow', link: '/shell/control-flow' },
+          { text: '4. Text Processing', link: '/shell/text-processing' },
+          { text: '5. Shell Scripting', link: '/shell/shell-scripting' }
         ]
       },
       {
