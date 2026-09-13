@@ -14,11 +14,16 @@ export default defineConfig({
       label: 'On This Page'
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Linux', link: '/linux/fundamentals' },
-      { text: 'Shell', link: '/shell/bash-basics' },
-      { text: 'Containers', link: '/containers/1-fundamentals' },
-      { text: 'Kubernetes', link: '/kubernetes/1-architecture' }
+      { text: '🏠 Home', link: '/' },
+      {
+        text: 'Documentation ▾',
+        items: [
+          { text: 'Linux', link: '/linux/fundamentals' },
+          { text: 'Shell', link: '/shell/bash-basics' },
+          { text: 'Containers', link: '/containers/1-fundamentals' },
+          { text: 'Kubernetes', link: '/kubernetes/1-architecture' }
+        ]
+      }
     ],
     sidebar: [
       {
