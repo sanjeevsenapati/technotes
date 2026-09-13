@@ -4,6 +4,12 @@ Welcome to **TechNotes** (formerly Lishes), a comprehensive collection of techni
 
 This documentation site is built using [VitePress](https://vitepress.dev/), a fast and minimalist static site generator.
 
+### 🔥 Key Features
+- **Premium Aesthetics:** Features a custom dark-mode optimized theme with glassmorphism, dynamic gradients, and vibrant blue accents.
+- **Interactive Homepage:** Includes a custom-built, animated `<TerminalHero />` Vue component that simulates typing and executing shell commands directly on the home screen.
+- **Deep Technical Content:** Extensive guides on Linux, Kubernetes, OpenShift, Docker, Nginx, and Git.
+- **Tips & Tricks:** A dedicated section for advanced cryptographic tooling (OpenSSL, Java Keystores) and other complex engineering cheatsheets.
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 18 or higher recommended)
