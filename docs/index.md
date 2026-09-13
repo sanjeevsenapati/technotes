@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: TechNotes
-  text: The Engineer's Dashboard
-  tagline: Production-ready documentation, core system fundamentals, and copy-paste cheatsheets.
+  text: The Engineer's Practical Documentation
+  tagline: Documentation, core system fundamentals, and copy-paste cheatsheets.
   actions:
     - theme: brand
       text: 🔍 Search the Docs...
@@ -84,17 +84,17 @@ find . -name "*.conf" -exec sed -i 's/foo/bar/g' {} +
 
 Stay up to date with the newest deep dives added to the documentation:
 
-| Topic | Category | Description |
-|-------|----------|-------------|
-| **[OpenSSL Mastery](/tips/1-openssl)** | Tips & Tricks | Generate keys, CSRs, convert formats, and debug SSL handshakes using s_client. |
-| **[Java Keystore Mastery](/tips/2-java-keystore)** | Tips & Tricks | Manage JKS/PKCS12 files, import certificates, and modernize legacy keystores. |
-| **[Docker Compose](/containers/4-docker-compose)** | Containers | Defining IaC deployments and understanding internal Docker DNS resolution. |
-| **[Advanced Podman](/containers/9-podman-advanced)** | Containers | Building Kubernetes-style Pods and configuring systemd auto-updates. |
-| **[Python One-Liners](/python/1-one-liners)** | Python | Shell replacements using `python -c` for JSON parsing, base64, and math. |
-| **[Nginx Load Balancing](/nginx/2-reverse-proxy-and-load-balancing)** | Nginx | Configuring `proxy_pass` and `least_conn` vs `ip_hash` load balancing algorithms. |
-| **[Advanced Git](/git/4-advanced-workflows)** | Git | Rewriting history safely using rebasing, cherry-picking, and `reflog`. |
-| **[OpenShift SCCs](/openshift/3-security-context-constraints)** | OpenShift | Why pods crash with "Permission Denied" and how to fix them using `anyuid`. |
-| **[OpenShift Routes](/openshift/4-routes-and-networking)** | OpenShift | Exposing services and configuring edge vs passthrough TLS termination. |
+| Topic                                                                 | Category      | Description                                                                       |
+| --------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------- |
+| **[OpenSSL Mastery](/tips/1-openssl)**                                | Tips & Tricks | Generate keys, CSRs, convert formats, and debug SSL handshakes using s_client.    |
+| **[Java Keystore Mastery](/tips/2-java-keystore)**                    | Tips & Tricks | Manage JKS/PKCS12 files, import certificates, and modernize legacy keystores.     |
+| **[Docker Compose](/containers/4-docker-compose)**                    | Containers    | Defining IaC deployments and understanding internal Docker DNS resolution.        |
+| **[Advanced Podman](/containers/9-podman-advanced)**                  | Containers    | Building Kubernetes-style Pods and configuring systemd auto-updates.              |
+| **[Python One-Liners](/python/1-one-liners)**                         | Python        | Shell replacements using `python -c` for JSON parsing, base64, and math.          |
+| **[Nginx Load Balancing](/nginx/2-reverse-proxy-and-load-balancing)** | Nginx         | Configuring `proxy_pass` and `least_conn` vs `ip_hash` load balancing algorithms. |
+| **[Advanced Git](/git/4-advanced-workflows)**                         | Git           | Rewriting history safely using rebasing, cherry-picking, and `reflog`.            |
+| **[OpenShift SCCs](/openshift/3-security-context-constraints)**       | OpenShift     | Why pods crash with "Permission Denied" and how to fix them using `anyuid`.       |
+| **[OpenShift Routes](/openshift/4-routes-and-networking)**            | OpenShift     | Exposing services and configuring edge vs passthrough TLS termination.            |
 
 ---
 

@@ -1,86 +1,128 @@
 /**
- * Custom Theme for TechNotes
- * Professional Engineering Documentation Theme
+ * Premium Interactive Theme for TechNotes
+ * Features Glassmorphism, Micro-animations, and Vibrant Accents
  */
 
 :root {
-  /* Comfortable off-white for light mode */
-  --vp-c-bg: #f9f9fa;
-  --vp-c-bg-alt: #f1f2f4;
-  --vp-c-text-1: #24292f;
-  --vp-c-text-2: #57606a;
+  /* Vibrant Light Theme - Deep Purple & Teal */
+  --vp-c-bg: #fdfdfd;
+  --vp-c-bg-alt: #f3f4f8;
+  --vp-c-text-1: #1a1a24;
+  --vp-c-text-2: #4a4a5e;
   
-  /* Brand colors */
-  --vp-c-brand-1: #0969da;
-  --vp-c-brand-2: #0550ae;
-  --vp-c-brand-3: #033d8b;
+  --vp-c-brand-1: #6d28d9; /* Deep violet */
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #a78bfa;
   
-  /* Monospace font */
   --vp-font-family-mono: "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .dark {
-  /* Professional dark developer theme */
-  --vp-c-bg: #0d1117;
-  --vp-c-bg-alt: #161b22;
-  --vp-c-text-1: #c9d1d9;
-  --vp-c-text-2: #8b949e;
+  /* Cyberpunk / Elegant Dark Theme */
+  --vp-c-bg: #09090e; /* Extremely dark blue/black */
+  --vp-c-bg-alt: #13131c;
+  --vp-c-text-1: #e2e8f0;
+  --vp-c-text-2: #94a3b8;
   
-  /* Brand colors for dark mode */
-  --vp-c-brand-1: #58a6ff;
-  --vp-c-brand-2: #79c0ff;
-  --vp-c-brand-3: #a5d6ff;
+  /* Neon Teal & Purple Accents */
+  --vp-c-brand-1: #0ea5e9; /* Neon Blue */
+  --vp-c-brand-2: #38bdf8;
+  --vp-c-brand-3: #7dd3fc;
+  
+  /* Additional Glowing Accents */
+  --glow-color: rgba(14, 165, 233, 0.5);
+  --glass-bg: rgba(19, 19, 28, 0.6);
 }
 
-/* Typography Improvements */
-.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
-  font-weight: 600;
-  color: var(--vp-c-text-1);
+/* Base Typography */
+.vp-doc h1, .vp-doc h2, .vp-doc h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.vp-doc p {
-  line-height: 1.7;
-  margin-bottom: 1.2em;
+/* ==========================================================================
+   HOMEPAGE SPECIFIC ENHANCEMENTS (Glassmorphism & Animations)
+   ========================================================================== */
+
+/* Hero Section Animated Gradient */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, var(--glow-color) 0%, transparent 40%);
+  opacity: 0.15;
+  z-index: -1;
+  animation: pulse-glow 8s ease-in-out infinite alternate;
 }
 
-/* Code block styling differentiation */
+@keyframes pulse-glow {
+  0% { transform: scale(0.9) translate(0, 0); opacity: 0.1; }
+  100% { transform: scale(1.1) translate(2%, 2%); opacity: 0.2; }
+}
+
+/* Feature Cards - Glassmorphism & Hover */
+.VPFeature {
+  background: var(--vp-c-bg-alt) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 16px !important;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .VPFeature {
+  background: var(--glass-bg) !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 30px -10px var(--glow-color) !important;
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* Call to Action Buttons */
+.VPButton.brand {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2)) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px -3px var(--glow-color);
+  transition: all 0.3s ease;
+}
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px var(--glow-color);
+}
+
+/* Code Blocks Enhancement */
 .vp-doc [class*="language-"] {
-  border-radius: 8px;
-  border: 1px solid var(--vp-c-divider);
-  background-color: var(--vp-c-bg-alt);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
 .dark .vp-doc [class*="language-"] {
-  background-color: #0d1117;
-  border-color: #30363d;
+  background-color: #0d0d14;
 }
 
-/* Command prompt styling inside code blocks (optional simulation) */
-.vp-doc code {
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.9em;
-}
-
-/* Subtler shadows */
+/* Navbar Subtler Shadows & Blur */
 .VPNavBar {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(253, 253, 253, 0.8) !important;
 }
 .dark .VPNavBar {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #30363d;
+  background-color: rgba(9, 9, 14, 0.8) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  box-shadow: none;
 }
 
-/* Custom Callouts (Tips, Warnings, etc) */
-.vp-doc .custom-block.info {
-  border-color: #0969da;
-  background-color: rgba(9, 105, 218, 0.05);
-}
-.dark .vp-doc .custom-block.info {
-  border-color: #58a6ff;
-  background-color: rgba(88, 166, 255, 0.1);
-}
-
-/* Sidebar customization */
-.VPSidebar {
-  background-color: var(--vp-c-bg);
+/* Bold text styling */
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+  font-size: 1.1em;
 }
