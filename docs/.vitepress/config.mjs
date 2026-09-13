@@ -21,7 +21,8 @@ export default defineConfig({
           { text: 'Linux', link: '/linux/fundamentals' },
           { text: 'Shell', link: '/shell/bash-basics' },
           { text: 'Containers', link: '/containers/1-fundamentals' },
-          { text: 'Kubernetes', link: '/kubernetes/1-architecture' }
+          { text: 'Kubernetes', link: '/kubernetes/1-architecture' },
+          { text: 'OpenShift', link: '/openshift/1-architecture-and-differences' }
         ]
       }
     ],
@@ -79,6 +80,17 @@ export default defineConfig({
           { text: '10. Advanced Scheduling', link: '/kubernetes/10-advanced-scheduling' },
           { text: '11. StatefulSets', link: '/kubernetes/11-statefulsets' },
           { text: '12. DaemonSets', link: '/kubernetes/12-daemonsets' }
+        ]
+      },
+      {
+        text: 'OPENSHIFT',
+        collapsed: false,
+        items: [
+          { text: '1. Architecture & Core Differences', link: '/openshift/1-architecture-and-differences' },
+          { text: '2. Projects & Users', link: '/openshift/2-projects-and-users' },
+          { text: '3. Security Context Constraints', link: '/openshift/3-security-context-constraints' },
+          { text: '4. Routes & Networking', link: '/openshift/4-routes-and-networking' },
+          { text: '5. Builds & Deployments', link: '/openshift/5-builds-and-deployments' }
         ]
       }
     ],

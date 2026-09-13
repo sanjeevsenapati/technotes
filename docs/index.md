@@ -26,6 +26,9 @@ features:
   - title: 🐳 Containers
     details: Isolation fundamentals, building minimal Docker images, and managing rootless Podman.
     link: /containers/1-fundamentals
+  - title: 🛑 OpenShift
+    details: Enterprise Kubernetes features, SCC security restrictions, Routes, and BuildConfigs.
+    link: /openshift/1-architecture-and-differences
 ---
 
 ## ⚡ Daily Cheatsheet
@@ -74,10 +77,10 @@ Stay up to date with the newest deep dives added to the documentation:
 
 | Topic | Category | Description |
 |-------|----------|-------------|
+| **[OpenShift SCCs](/openshift/3-security-context-constraints)** | OpenShift | Why pods crash with "Permission Denied" and how to fix them using `anyuid`. |
+| **[OpenShift Routes](/openshift/4-routes-and-networking)** | OpenShift | Exposing services and configuring edge vs passthrough TLS termination. |
 | **[Storage & LVM](/linux/storage-and-lvm)** | Linux | Managing ext4/xfs filesystems and resizing Logical Volumes on the fly. |
 | **[Awk Masterclass](/shell/awk)** | Shell | Leveraging the awk programming language for complex data aggregation. |
-| **[Processes & Services](/linux/processes-and-services)** | Linux | Managing background daemons and writing custom `systemd` unit files. |
-| **[Networking](/linux/networking)** | Linux | Subnetting, supernetting, CIDR blocks, and using the `ipcalc` utility. |
 
 ---
 
