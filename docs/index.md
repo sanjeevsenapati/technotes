@@ -35,6 +35,9 @@ features:
   - title: 🛑 OpenShift
     details: Enterprise Kubernetes features, SCC security restrictions, Routes, and BuildConfigs.
     link: /openshift/1-architecture-and-differences
+  - title: 💡 Tips & Tricks
+    details: Ultimate reference guides for cryptographic tooling like OpenSSL and Java Keystores.
+    link: /tips/1-openssl
 ---
 
 ## ⚡ Daily Cheatsheet
@@ -83,6 +86,8 @@ Stay up to date with the newest deep dives added to the documentation:
 
 | Topic | Category | Description |
 |-------|----------|-------------|
+| **[OpenSSL Mastery](/tips/1-openssl)** | Tips & Tricks | Generate keys, CSRs, convert formats, and debug SSL handshakes using s_client. |
+| **[Java Keystore Mastery](/tips/2-java-keystore)** | Tips & Tricks | Manage JKS/PKCS12 files, import certificates, and modernize legacy keystores. |
 | **[Docker Compose](/containers/4-docker-compose)** | Containers | Defining IaC deployments and understanding internal Docker DNS resolution. |
 | **[Advanced Podman](/containers/9-podman-advanced)** | Containers | Building Kubernetes-style Pods and configuring systemd auto-updates. |
 | **[Python One-Liners](/python/1-one-liners)** | Python | Shell replacements using `python -c` for JSON parsing, base64, and math. |

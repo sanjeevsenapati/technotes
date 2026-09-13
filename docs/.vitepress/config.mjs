@@ -25,7 +25,8 @@ export default defineConfig({
           { text: 'Nginx', link: '/nginx/1-fundamentals' },
           { text: 'Containers', link: '/containers/1-fundamentals' },
           { text: 'Kubernetes', link: '/kubernetes/1-architecture' },
-          { text: 'OpenShift', link: '/openshift/1-architecture-and-differences' }
+          { text: 'OpenShift', link: '/openshift/1-architecture-and-differences' },
+          { text: 'Tips & Tricks', link: '/tips/1-openssl' }
         ]
       }
     ],
@@ -128,6 +129,14 @@ export default defineConfig({
           { text: '3. Security Context Constraints', link: '/openshift/3-security-context-constraints' },
           { text: '4. Routes & Networking', link: '/openshift/4-routes-and-networking' },
           { text: '5. Builds & Deployments', link: '/openshift/5-builds-and-deployments' }
+        ]
+      },
+      {
+        text: 'TIPS & TRICKS',
+        collapsed: false,
+        items: [
+          { text: '1. OpenSSL Mastery', link: '/tips/1-openssl' },
+          { text: '2. Java Keystore (keytool)', link: '/tips/2-java-keystore' }
         ]
       }
     ],
