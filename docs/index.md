@@ -29,8 +29,8 @@ features:
   - title: ☸️ Kubernetes
     details: Architectural diagrams, ReplicaSets, Ingress networking, and advanced RBAC troubleshooting.
     link: /kubernetes/1-architecture
-  - title: 🐳 Containers
-    details: Isolation fundamentals, building minimal Docker images, and managing rootless Podman.
+  - title: 🐳 Container Mastery
+    details: Namespaces, cgroups, multi-stage builds, rootless Podman, and systemd integration.
     link: /containers/1-fundamentals
   - title: 🛑 OpenShift
     details: Enterprise Kubernetes features, SCC security restrictions, Routes, and BuildConfigs.
@@ -83,6 +83,8 @@ Stay up to date with the newest deep dives added to the documentation:
 
 | Topic | Category | Description |
 |-------|----------|-------------|
+| **[Docker Compose](/containers/4-docker-compose)** | Containers | Defining IaC deployments and understanding internal Docker DNS resolution. |
+| **[Advanced Podman](/containers/7-podman-advanced)** | Containers | Building Kubernetes-style Pods and configuring systemd auto-updates. |
 | **[Python One-Liners](/python/1-one-liners)** | Python | Shell replacements using `python -c` for JSON parsing, base64, and math. |
 | **[Nginx Load Balancing](/nginx/2-reverse-proxy-and-load-balancing)** | Nginx | Configuring `proxy_pass` and `least_conn` vs `ip_hash` load balancing algorithms. |
 | **[Advanced Git](/git/4-advanced-workflows)** | Git | Rewriting history safely using rebasing, cherry-picking, and `reflog`. |

@@ -91,8 +91,12 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '1. Fundamentals', link: '/containers/1-fundamentals' },
-          { text: '2. Docker', link: '/containers/2-docker' },
-          { text: '3. Podman', link: '/containers/3-podman' }
+          { text: '2. Docker Basics', link: '/containers/2-docker-basics' },
+          { text: '3. Building Images', link: '/containers/3-building-images' },
+          { text: '4. Docker Compose', link: '/containers/4-docker-compose' },
+          { text: '5. Advanced Docker', link: '/containers/5-advanced-docker' },
+          { text: '6. Podman Transition', link: '/containers/6-podman-transition' },
+          { text: '7. Advanced Podman', link: '/containers/7-podman-advanced' }
         ]
       },
       {
